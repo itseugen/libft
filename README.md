@@ -31,3 +31,33 @@ ft_itoa:
   Turns an integer "n" into a string and returns the string.
   Prototype:
   char	*ft_itoa(int n);
+
+ft_strmapi:
+  Applies the function "f" to each element of the string "s" and creating a new string it returns.
+  Prototype:
+  char *ft_strmapi(char const *s, char (*f)(unsigned int, char));
+ 
+ft_striteri:
+  Applies the function "f" to each element of the string "s".
+  Prototype:
+  void ft_striteri(char *s, void (*f)(unsigned int, char*));
+  
+ft_putchar_fd:
+  Outputs a character "c" to the file descriptor "fd".
+  Prototype:
+  void ft_putchar_fd(char c, int fd);
+ 
+ft_putstr_fd:
+  Outputs a string "s" to the file descriptor "fd".
+  Prototype:
+  void ft_putstr_fd(char *s, int fd);
+
+ft_putendl_fd:
+  Outputs a string "s" followed by a newline to the file descriptor "fd".
+  Prototype:
+  void ft_putendl_fd(char *s, int fd);
+  
+ft_putnbr_fd:
+  Outputs an integer "n" to the file descriptor "fd"
+  Prototype:
+  void ft_putnbr_fd(int n, int fd);
