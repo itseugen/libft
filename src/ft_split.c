@@ -6,7 +6,7 @@
 /*   By: eweiberl <eweiberl@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/23 14:41:01 by eweiberl          #+#    #+#             */
-/*   Updated: 2023/03/25 13:46:44 by eweiberl         ###   ########.fr       */
+/*   Updated: 2023/03/25 14:50:59 by eweiberl         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,8 @@
 
 static size_t	ft_count_substr(char const *s, char c);
 static char		*ft_getstr(char const *s, size_t i, char c);
-void			ft_free_strings(void **strings, size_t size);
-size_t			ft_next_pos(char const *s, size_t i, char c);
+static void		ft_free_strings(void **strings, size_t size);
+static size_t	ft_next_pos(char const *s, size_t i, char c);
 
 char	**ft_split(char const *s, char c)
 {
@@ -81,7 +81,7 @@ static size_t	ft_count_substr(char const *s, char c)
 	return (ctr);
 }
 
-void	ft_free_strings(void **strings, size_t size)
+static void	ft_free_strings(void **strings, size_t size)
 {
 	size_t	i;
 
@@ -94,7 +94,7 @@ void	ft_free_strings(void **strings, size_t size)
 	free(strings);
 }
 
-size_t	ft_next_pos(char const *s, size_t i, char c)
+static size_t	ft_next_pos(char const *s, size_t i, char c)
 {
 	while (s[i] == c && s[i])
 		i++;
