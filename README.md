@@ -25,4 +25,9 @@ ft_split:
   Splits up a string "s" into substrings which are seperated by any amount of a character "c"
   and returns an array of the newly created strings.
   Prototype:
-  char **ft_split(char const *s, char c)
+  char **ft_split(char const *s, char c);
+
+ft_itoa:
+  Turns an integer "n" into a string and returns the string.
+  Prototype:
+  char	*ft_itoa(int n);
