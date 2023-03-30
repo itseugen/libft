@@ -6,7 +6,7 @@
 /*   By: eweiberl <eweiberl@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/27 15:36:38 by eweiberl          #+#    #+#             */
-/*   Updated: 2023/03/27 15:44:55 by eweiberl         ###   ########.fr       */
+/*   Updated: 2023/03/29 11:40:07 by eweiberl         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,9 +14,8 @@
 
 void	ft_lstadd_front(t_list **lst, t_list *new)
 {
-	if (!lst)
+	if (!lst || !new)
 		return ;
-	if (*lst)
-		new->next = *lst;
+	new->next = *lst;
 	*lst = new;
 }
