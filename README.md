@@ -16,7 +16,7 @@ Coded in
 </p>
 
 ### Most of the functions in this library are my own versions of existing standard functions.
-The definition of the library functions can be found [here](https://www.ibm.com/docs/en/i/7.3?topic=extensions-standard-c-library-functions-table-by-name)
+The definition of the library functions can be found [here](https://www.ibm.com/docs/en/i/7.3?topic=extensions-standard-c-library-functions-table-by-name).
 
 ### The functions mentioned below are either not part of the libc or only in it in a different form:
 
